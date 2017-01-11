@@ -11,8 +11,8 @@ except ImportError:
     from setuptools import setup
 
 setup(
-    name='chembl_business_model',
-    version='0.5.19',
+    name='chembl-business-model',
+    version='0.8.1',
     author='Michal Nowotka',
     platforms=['Linux'],
     author_email='mnowotka@ebi.ac.uk',
@@ -24,7 +24,7 @@ setup(
     long_description=open('README.rst').read(),
     install_requires=[
         'requests',
-        'chembl_core_model>=0.5.8',
+        'chembl-core-model>=0.8.3',
         'django-celery',
         'BeautifulSoup==3.2.1',
         'Pillow>=2.2.1',
@@ -33,7 +33,7 @@ setup(
         'numpy>=1.8.0',
     ],
     include_package_data=False,
-    classifiers=['Development Status :: 2 - Pre-Alpha',
+    classifiers=['Development Status :: 3 - Alpha',
                  'Environment :: Web Environment',
                  'Framework :: Django',
                  'Intended Audience :: Developers',
